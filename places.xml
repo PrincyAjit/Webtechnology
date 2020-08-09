@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE places SYSTEM "places.dtd"
+[
+<!ELEMENT wildlife (wname,estyear)>  
+<!ELEMENT wname (#PCDATA)>
+<!ELEMENT estyear (#PCDATA)>
+]>
+
+<places>
+	<beach>
+		<bname>Kovalam Beach</bname>
+		<region>south</region>
+	</beach>
+	<beach>
+		<bname>Anjuna Beach</bname>
+		<region>west</region>
+	</beach>	
+	<beach>
+		<bname>Calangute Beach</bname>
+		<region>west</region>
+	</beach>
+	<beach>
+		<bname>Colva Beach</bname>
+		<region>west</region>
+	</beach>
+	<hillstation>
+		<hname>Munnar</hname>
+		<state districtcount="14">Kerala</state>
+	</hillstation>
+	<hillstation>
+		<hname>Manali</hname>
+		<state districtcount="12">Himachal Pradesh</state>
+	</hillstation>
+	<hillstation>
+		<hname>Srinagar</hname>
+		<state districtcount="22">Jammu Kashmir</state>
+	</hillstation>
+	<wildlife>
+		<wname>Jim Corbett National Park</wname>
+		<estyear>1936</estyear>
+	</wildlife>
+	<wildlife>
+		<wname>Periyar National Park</wname>
+		<estyear>1982</estyear>
+	</wildlife>
+	<wildlife>
+		<wname>The Great Himalayan National Park</wname>
+		<estyear>1990</estyear>
+	</wildlife>
+	
+</places>	
