@@ -1,9 +1,11 @@
 <!ELEMENT places (beach+,hillstation+,willdlife+)>  
-<!ELEMENT beach (bname,region)> 
+<!ELEMENT beach (bname,region,bdesc)> 
 <!ELEMENT bname (#PCDATA)> 
 <!ELEMENT region (#PCDATA)>
-<!ELEMENT hillstation (hname,state)>  
+<!ELEMENT bdesc (#PCDATA)>
+<!ELEMENT hillstation (hname,hstate,hdesc)>  
 <!ELEMENT hname (#PCDATA)>
-<!ELEMENT state (#PCDATA)>
-<!ATTLIST state districtcount PCDATA "0">
+<!ELEMENT hstate (#PCDATA)>
+<!ATTLIST hstate districtcount PCDATA "0">
+<!ELEMENT hdesc (#PCDATA)>
 

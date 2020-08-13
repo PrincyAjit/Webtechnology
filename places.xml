@@ -1,51 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <!DOCTYPE places SYSTEM "places.dtd"
 [
-<!ELEMENT wildlife (wname,estyear)>  
+<!ELEMENT wildlife (wname,estyear,wdesc)>  
 <!ELEMENT wname (#PCDATA)>
 <!ELEMENT estyear (#PCDATA)>
+<!ELEMENT wdesc (#PCDATA)>
 ]>
+
+
 
 <places>
 	<beach>
 		<bname>Kovalam Beach</bname>
 		<region>south</region>
+		<bdesc>Since as early as the 1930s, Kovalam Beach has been an internationally famous stopover for tourists. There are three crescent-shaped beaches with a rock wall that make Kovalam one of the best spots in the country for sea swimming. You can also go on a catamaran cruise or sunbathe.</bdesc>
 	</beach>
 	<beach>
 		<bname>Anjuna Beach</bname>
 		<region>west</region>
+		<bdesc>Popularly known as the freak capital of the world, Anjuna is just the right place for lazing holidaymakers. Besides the calm waters of the Arabian Sea lapping softly on the Indian shore, Anjuna comes live with its ever-famous full-moon parties and the Wednesday flea market to take one on to a trance trip. Anjuna is a small village in north Goa, on the shores of the Arabian Sea. It lies 18 km away from Panaji (the old name for Panjim), the capital of Goa. </bdesc>
 	</beach>	
 	<beach>
 		<bname>Calangute Beach</bname>
 		<region>west</region>
+		<bdesc>Calangute is a town in North Goa, famous for its beach. The beach is the largest in North Goa and visited by thousands of domestic and international tourists alike. The peak tourist season is during Christmas and New Year, and during the summer in May.</bdesc>
 	</beach>
 	<beach>
 		<bname>Colva Beach</bname>
 		<region>west</region>
+		<bdesc>Lying on the shores of a quaint coastal village in Goa, Colva beach is a truly magnificent vacation spot for all tourists. It stretches for an impressive 2.4 km and features striking white sand, turquoise waves, and towering coconut palms. Tourists from around the world frequent the Colva beach for sights of stunning sunsets and remarkable blue waves.</bdesc>
 	</beach>
 	<hillstation>
 		<hname>Munnar</hname>
-		<state districtcount="14">Kerala</state>
+		<hstate districtcount="14">Kerala</hstate>
+		<hdesc></hdesc>
 	</hillstation>
 	<hillstation>
 		<hname>Manali</hname>
-		<state districtcount="12">Himachal Pradesh</state>
+		<hstate districtcount="12">Himachal Pradesh</hstate>
+		<hdesc>Nestled in between the snow-capped slopes of the Pir Panjal and the Dhauladhar ranges, Manali is one of the most popular hill stations in the country. With jaw-dropping views, lush green forests, sprawling meadows carpeted with flowers, gushing blue streams, a perpetual fairy-tale like mist lingering in the air, and a persistent fragrance of pines and freshness -  Manali has been blessed with extraordinary scenic beauty.</hdesc>
 	</hillstation>
 	<hillstation>
 		<hname>Srinagar</hname>
-		<state districtcount="22">Jammu Kashmir</state>
+		<hstate districtcount="22">Jammu Kashmir</hstate>
+		<hdesc>Srinagar, city, summer capital of Jammu and Kashmir union territory (Jammu is the winter capital), northern India, situated in the Kashmir region of the Indian subcontinent. The city lies along the banks of the Jhelum River at an elevation of 5,200 feet (1,600 metres) in the Vale of Kashmir.</hdesc>
 	</hillstation>
 	<wildlife>
 		<wname>Jim Corbett National Park</wname>
 		<estyear>1936</estyear>
+		<wdesc>Corbett National Park, got its name in 1957 after Jim Corbett, the famous naturalist and photographer. This is India’s first national park and beyond doubt the most attractive Park in India. The Park is located in the foothills of the Himalayas, in the midst of lush greenery and uneven mountains with varying heights, ranging from about 1300 feet to nearly 4000 feet.</wdesc>
 	</wildlife>
 	<wildlife>
 		<wname>Periyar National Park</wname>
 		<estyear>1982</estyear>
+		<wdesc>Periyar National Park & Wildlife Sanctuary, locating in Thekkady is the perfect example of nature's bounty with great scenic beauty and rich biodiversity. In this astounding location of Kerala, the Periyar National Park is considered as the most protected area for the elephants and the tigers.</wdesc>
 	</wildlife>
 	<wildlife>
 		<wname>The Great Himalayan National Park</wname>
 		<estyear>1990</estyear>
+		<wdesc>Great Himalayan National Park is spread across four valleys, each of which offers wide variety of endemic and exotic flora and fauna. Himalaya is known to be a home to 10% of world’s and 50% of India’s endemic plant species. Travellers can embark on various treks in the region that are suitable for amateurs as well as experts.</wdesc>
 	</wildlife>
 	
 </places>	
