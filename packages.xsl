@@ -36,14 +36,16 @@
       <th>Nights</th>
       <th>Itinerary</th>
     </tr>
-    <xsl:for-each select="manali/package[price &lt; 15000]">
+    <xsl:for-each select="manali/package">
+       <xsl:if test="price &lt; 15000">
       <tr> <!-- Accessing by node with predicate -->
-        <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="('Rs.','',price)"/></td>
-        <td><xsl:value-of select="nightcount"/></td>
-        <td><xsl:value-of select="itinerary"/></td>
-        <td><xsl:value-of select="sum(price|price)"/></td>
+          <td><xsl:value-of select="name"/></td>
+          <td><xsl:value-of select="('Rs.','',price)"/></td>
+          <td><xsl:value-of select="nightcount"/></td>
+          <td><xsl:value-of select="itinerary"/></td>
+          <td><xsl:value-of select="sum(price|price)"/></td>
       </tr>
+      </xsl:if>
     </xsl:for-each>
   </table>
   <h4>Packages greater than 15000</h4>
@@ -55,7 +57,8 @@
       <th>Itinerary</th>
       <th>Total(Inclusive of taxes)</th>
     </tr>
-    <xsl:for-each select="manali/package[price &gt; 15000]">
+    <xsl:for-each select="manali/package">
+      <xsl:if test="price &gt; 15000">
       <tr> <!-- Accessing by node with predicate -->
         <td><xsl:value-of select="name"/></td>
         <td><xsl:value-of select="('Rs.','',price)"/></td>
@@ -63,6 +66,7 @@
         <td><xsl:value-of select="itinerary"/></td>
         <td><xsl:value-of select="sum(price|price)"/></td>
       </tr>
+        </xsl:if>
     </xsl:for-each>
   </table>
   </body>
