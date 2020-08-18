@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="packages.xsl" type="text/xsl"?>
+<packages>
+	<goa>
+		<package>
+			<name> Best of Goa </name>
+			<price>5999</price>
+			<nightcount>3</nightcount>
+			<inclusions>3 star hotels,vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Arrival in Goa
+				Arrival at the aiport and transfer from airport to the Hotel (On Sharing Basis).
+				Day 2 - Full Day Sightseeing of South Goa
+				Full day sightseeing covering - Old Goa Churches, Dona Paula, Miramar Beach, Shopping at Panjim, Lunch at Spice Plantation - at extra cost, Mandovi River Cruise at extra cost(On Sharing Basis).
+				Day 3 - Day at Leisure
+				Your Full Day is at Leisure.
+				Day 4 - Departure from Goa
+				Transfers from Hotel to Airport (On Sharing Basis).
+			</itinerary>
+		</package>
+		<package>
+			<name> Amazing Goa </name>
+			<price> 7999</price>
+			<nightcount>3</nightcount>
+			<inclusions>5 star hotels,Vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Arrival in Goa
+				Arrival at the aiport and transfer from airport to the Hotel (On Sharing Basis).
+				Day 2 - Full Day Sightseeing of South Goa
+				Full day sightseeing covering - Old Goa Churches, Dona Paula, Miramar Beach, Shopping at Panjim, Lunch at Spice Plantation - at extra cost, Mandovi River Cruise at extra cost(On Sharing Basis).
+				Day 3 - Day at Leisure
+				Your Full Day is at Leisure.
+				Day 4 - Departure from Goa
+				Transfers from Hotel to Airport (On Sharing Basis).
+			</itinerary>
+		</package>
+		<package>
+			<name> Scenic Goa </name>
+			<price> 6999 </price>
+			<nightcount>2</nightcount>
+			<inclusions>3 star hotels,Vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Arrival in Goa
+				Arrival at the aiport and transfer from airport to the Hotel (On Sharing Basis).
+				Day 2 - Full Day Sightseeing of South Goa
+				Full day sightseeing covering - Old Goa Churches, Dona Paula, Miramar Beach, Shopping at Panjim, Lunch at Spice Plantation - at extra cost, Mandovi River Cruise at extra cost (On Sharing Basis)
+				Day 3 - Depart Goa
+				Transfers from Hotel to Airport (On Sharing Basis)
+			</itinerary>
+		</package>
+ 	</goa>
+ 	<manali>
+ 		<package>
+			<name> Sarthak Resort, Manali - Volvo </name>
+			<price>6499 </price>
+			<nightcount>4</nightcount>
+			<inclusions>Volvo,3 star hotels,Vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Delhi - Manali Volvo (Overnight)
+				Overnight Journey Delhi to Manali.
+				Day 2 - Manali-Hidimba Devi Temple-Vashist Hot Water Springs-Van Vihar-Hongkong Market and the Tibetan Monastery
+				Day 3 - Manali-Sollang valley
+				Day 4 - Manali-Kullu
+				Day 5 - Manali - Delhi Volvo (Overnight)
+			</itinerary>
+		</package>
+		<package>
+			<name>  Utopia Resort Manali Volvo - Ex Delhi</name>
+			<price>7499 </price>
+			<nightcount>4</nightcount>
+			<inclusions>Volvo,3 star hotels,Vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Delhi - Manali Volvo (Overnight)
+				Day 2 - Manali-Hidimba Devi Temple-Tibetan Monastery-Hongkong Market
+				Day 3 - Visit Sollang Valley
+				Day 4 - Visit Kullu-Manali
+				Day 5 - Manali - Delhi Volvo (Overnight)
+			</itinerary>
+		</package>
+		<package>
+			<name>Astounding Manali with Flight - Ex Delhi  </name>
+			<price> 30449</price>
+			<nightcount>4</nightcount>
+			<inclusions>Flights,3 star hotels,Vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Drive from Delhi to Manali (570 km/approx. 14 hours)
+				Day 2 - Trip to Rohtang Pass ( On Direct Payment)
+				Day 3 - Sightseeing in Manali
+				Day 4 - Drive from Manali to Chandigarh (325 km/approx. 8 hours)
+				After breakfast, drive to Delhi for the return journey. TOUR ENDS.
+			</itinerary>
+		</package>
+ 	</manali>	
+ 	<andaman>
+ 		<package>
+			<name> Mini Andaman </name>
+			<price> 15999 </price>
+			<nightcount>4</nightcount>
+			<inclusions>Flights(optional),3 star hotels,Vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Port Blair Pickup From Airport - Corbyn's Cove Beach - Cellular Jail Light and Sound Show
+				Day 2 - Hotel to Port Blair Harbour - Pickup from Havelock Harbour - Visit Radha Nagar Beach
+				Day 3 - Havelock - Elephant Beach
+				Day 4 - Depart Form Havelock Harbour - Port Blair Harbour to Hotel - Enjoy Shopping
+				Day 5 - Depart from Port Blair
+			</itinerary>
+		</package>
+		<package>
+			<name> Best of Andaman </name>
+			<price> 23999</price>
+			<nightcount>5</nightcount>
+			<inclusions>Flights(optional),3 star hotels,Vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Port Blair Pickup From Airport - Corbyn's Cove Beach - Cellular Jail Light and Sound Show
+				Day 2 - Hotel To Port Blair Harbour - Pickup from Havelock Harbour - Visit Radha Nagar Beach
+				Day 3 - Havelock - Elephant Beach
+				Day 4 - Depart Form Havelock Harbour - Pickup from Neil Island Harbour
+				Day 5 - Sightseeing and Drop at Neil Island Harbour - Port Blair Harbour To Hotel - Enjoy Shopping
+				Day 6 - Depart from Portblair
+			</itinerary>
+		</package>
+		<package>
+			<name> Simply Andaman </name>
+			<price>31249</price>
+			<nightcount>4</nightcount>
+			<inclusions>Flights(optional),3 star hotels,Vehicle Transfer,Meals,Sightseeing</inclusions>
+			<itinerary>
+				Day 1 - Arrival at Port Blair
+				Day 2 - Port Blair - Havelock (54 Kms)
+				Day 3 - Havelock
+				Day 4 - Havelock - Port Blair
+				Day 5 - Departure from Port Blair
+			</itinerary>
+		</package>
+ 	</andaman> 		
+</packages>	
