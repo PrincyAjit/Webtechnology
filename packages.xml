@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="https://princyajit.github.io/Webtechnology/packages.xsl" type="text/xsl"?>
+<?xml-stylesheet href="packages.xsl" type="text/xsl"?>
 <packages>
-	<goa>
+	<goa taxcharge="1000">
+		<about xlink:type="simple" xlink:href="https://www.w3schools.com" xlink:show="new">Click here to know about Goa!</about> <!-- xlink -->
+		<taxcharge>1000</taxcharge>
 		<package>
-			<name> Best of Goa </name>
+			<name > Best of Goa </name>
 			<price>5999</price>
 			<nightcount>3</nightcount>
 			<inclusions>3 star hotels,vehicle Transfer,Meals,Sightseeing</inclusions>
@@ -49,7 +51,9 @@
 			</itinerary>
 		</package>
  	</goa>
- 	<manali>
+ 	<manali taxcharge="1500">
+ 		<about xlink:type="simple" xlink:href="https://www.w3schools.com" xlink:show="new">Click here to know about Manali!</about> <!-- xlink -->
+ 		<taxcharge>1500</taxcharge>
  		<package>
 			<name> Sarthak Resort, Manali - Volvo </name>
 			<price>6499 </price>
@@ -91,7 +95,9 @@
 			</itinerary>
 		</package>
  	</manali>	
- 	<andaman>
+ 	<andaman taxcharge="2000">
+ 		<about xlink:type="simple" xlink:href="https://www.w3schools.com" xlink:show="new">Click here to know about Andaman!</about> <!-- xlink -->
+ 		<taxcharge>2000</taxcharge>
  		<package>
 			<name> Mini Andaman </name>
 			<price> 15999 </price>
