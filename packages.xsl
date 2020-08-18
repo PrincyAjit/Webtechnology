@@ -22,7 +22,7 @@
         <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(goa/taxcharge|price)[number(.) = .]"/></td>
+       <td><xsl:value-of select="sum(price|price)"/></td>
         
       </tr>
     </xsl:for-each>
