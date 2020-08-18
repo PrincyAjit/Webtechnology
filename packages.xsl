@@ -32,7 +32,7 @@
       <th>Nights</th>
       <th>Itinerary</th>
     </tr>
-    <xsl:for-each select="//manali/package[price < 15000]">
+    <xsl:for-each select="//manali/package[price &lt; 15000]">
       <tr> <!-- Accessing by node with predicate -->
         <td><xsl:value-of select="name"/></td>
         <td><xsl:value-of select="('Rs.','',price)"/></td>
@@ -51,7 +51,7 @@
       <th>Itinerary</th>
       <th>Total(Inclusive of taxes)</th>
     </tr>
-    <xsl:for-each select="//manali/package[price > 15000]">
+    <xsl:for-each select="//manali/package[price &gt; 15000]">
       <tr> <!-- Accessing by node with predicate -->
         <td><xsl:value-of select="name"/></td>
         <td><xsl:value-of select="('Rs.','',price)"/></td>
