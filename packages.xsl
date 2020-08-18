@@ -8,8 +8,9 @@
   <table border="1">
     <tr>
       <th>Package name</th>
-      <th>Destination</th>
-      <th>PRICE</th>
+      <th>Price</th>
+      <th>Nights</th>
+      <th>Itinerary</th>
     </tr>
     <xsl:for-each select="goa/package">
       <tr>
