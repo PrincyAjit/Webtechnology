@@ -2,8 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/packages">
   <html>
-  <body>
-    <body style="background-color:#E3E2DF;">
+  <body style="background-color:#E3E2DF;">
   <h2>Packages</h2>
   <h3>Goa</h3>
   <table border="1">
