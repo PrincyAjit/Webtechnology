@@ -23,7 +23,7 @@
       </tr>
     </xsl:for-each>
   </table>
-  <h3>Manali</h3>
+<!--   <h3>Manali</h3>
   <div><xsl:value-of select="manali/about"/></div>
   <h4>Packages less than 15000</h4>
   <table border="1">
@@ -80,7 +80,7 @@
         <td><xsl:value-of select="sum(/goa/taxcharge,price)"/></td>
       </tr>
     </xsl:for-each>
-  </table>
+  </table> -->
   </body>
   </html>
 </xsl:template>
