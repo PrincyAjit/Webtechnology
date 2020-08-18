@@ -42,7 +42,7 @@
         <td><xsl:value-of select="('Rs.','',price)"/></td>
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-        <td><xsl:value-of select="sum(/manali/taxcharge,price)"/></td>
+        <td><xsl:value-of sum(price|price)"/></td>
       </tr>
     </xsl:for-each>
   </table>
@@ -61,7 +61,7 @@
         <td><xsl:value-of select="('Rs.','',price)"/></td>
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-        <td><xsl:value-of select="sum(/goa/taxcharge,price)"/></td>
+        <td><xsl:value-of select="sum(price|price)"/></td>
       </tr>
     </xsl:for-each>
   </table>
