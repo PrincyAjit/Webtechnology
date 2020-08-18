@@ -1,56 +1,66 @@
+        <td><xsl:value-of select="name"/></td>
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:template match="/packages">
+<xsl:template match="/">
   <html>
-    <head>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
     <body style="background-color:#E3E2DF;">
-      <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" height="50" width="55"> </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div style="margin-left: 900px;" class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul  class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="homepage.html"><b>Home</b><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="gallery.html" target=""><b>Gallery</b></a> 
-      </li>
-      
-      <li class="nav-item active">
-        <a class="nav-link" href="signup.html" target=""><b>Signup</b></a> 
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="login.html" target=""><b>Login</b></a> 
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="aboutus.html" target=""><b>About Us</b></a> 
-      </li>
-      
-      
-      <!-- <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li> -->
-    </ul>
-   
-  </div>
-     
-</nav>
     <h2>Packages</h2>
   <h3>Goa</h3>
   <table border="1">
     <tr>
       <th>Package name</th>
-      <th>Price</th>
       <th>Nights</th>
       <th>Itinerary</th>
     </tr>
-    <xsl:for-each select="goa/package">
-      <tr>
+    <xsl:for-each select="packages/goa/package">
+      <tr> <!-- Accessing by node location -->
+        <td><xsl:value-of select="price"/></td>
+        <td><xsl:value-of select="nightcount"/></td>
+        <td><xsl:value-of select="itinerary"/></td>
+      </tr>
+    </xsl:for-each>
+  </table>
+  <h3>Manalii</h3>
+  <h4>Packages less than 15000</h4>
+  <table border="1">
+    <tr>
+      <th>Package name</th>
+      <th>Nights</th>
+      <th>Itinerary</th>
+    </tr>
+    <xsl:for-each select="//manali/package[price < 15000]">
+      <tr> <!-- Accessing by node with predicate -->
+        <td><xsl:value-of select="name"/></td>
+        <td><xsl:value-of select="price"/></td>
+        <td><xsl:value-of select="nightcount"/></td>
+        <td><xsl:value-of select="itinerary"/></td>
+      </tr>
+    </xsl:for-each>
+  </table>
+  <h4>Packages greater than 15000</h4>
+  <table border="1">
+    <tr>
+      <th>Package name</th>
+      <th>Nights</th>
+      <th>Itinerary</th>
+    </tr>
+    <xsl:for-each select="//manali/package[price > 15000]">
+      <tr> <!-- Accessing by node with predicate -->
+        <td><xsl:value-of select="name"/></td>
+        <td><xsl:value-of select="price"/></td>
+        <td><xsl:value-of select="nightcount"/></td>
+        <td><xsl:value-of select="itinerary"/></td>
+      </tr>
+    </xsl:for-each>
+  </table>
+   <table border="1">
+    <tr>
+      <th>Package name</th>
+      <th>Nights</th>
+      <th>Itinerary</th>
+    </tr>
+    <xsl:for-each select="child:: andaman/package">
+      <tr> <!-- Accessing by node type -->
         <td><xsl:value-of select="name"/></td>
         <td><xsl:value-of select="price"/></td>
         <td><xsl:value-of select="nightcount"/></td>
