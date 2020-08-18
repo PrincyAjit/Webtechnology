@@ -28,7 +28,7 @@
     </xsl:for-each>
   </table>
 <h3>Manali</h3>
-  <div><xsl:value-of select="manali/about"/></div>
+  <div><xsl:value-of select="manali/about/@xlink:href" xmlns:x-link="http://www.w3.org/1999/xlink"/></div>
   <h4>Packages less than 15000</h4>
   <table border="1">
     <tr>
