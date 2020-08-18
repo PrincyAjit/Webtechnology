@@ -27,7 +27,44 @@
       </tr>
     </xsl:for-each>
   </table>
-
+<h3>Manali</h3>
+  <div><xsl:value-of select="manali/about"/></div>
+  <h4>Packages less than 15000</h4>
+  <table border="1">
+    <tr>
+      <th>Package name</th>
+      <th>Nights</th>
+      <th>Itinerary</th>
+    </tr>
+    <xsl:for-each select="manali/package[price &lt; 15000]">
+      <tr> <!-- Accessing by node with predicate -->
+        <td><xsl:value-of select="name"/></td>
+        <td><xsl:value-of select="('Rs.','',price)"/></td>
+        <td><xsl:value-of select="nightcount"/></td>
+        <td><xsl:value-of select="itinerary"/></td>
+        <td><xsl:value-of select="sum(/manali/taxcharge,price)"/></td>
+      </tr>
+    </xsl:for-each>
+  </table>
+  <h4>Packages greater than 15000</h4>
+  <table border="1">
+    <tr>
+      <th>Package name</th>
+      <th>Price</th>
+      <th>Nights</th>
+      <th>Itinerary</th>
+      <th>Total(Inclusive of taxes)</th>
+    </tr>
+    <xsl:for-each select="manali/package[price &gt; 15000]">
+      <tr> <!-- Accessing by node with predicate -->
+        <td><xsl:value-of select="name"/></td>
+        <td><xsl:value-of select="('Rs.','',price)"/></td>
+        <td><xsl:value-of select="nightcount"/></td>
+        <td><xsl:value-of select="itinerary"/></td>
+        <td><xsl:value-of select="sum(/goa/taxcharge,price)"/></td>
+      </tr>
+    </xsl:for-each>
+  </table>
   </body>
   </html>
 </xsl:template>
