@@ -14,7 +14,7 @@
       <th>Price</th>
       <th>Nights</th>
       <th>Itinerary</th>
-    
+      <th>Total(Inclusive of taxes)</th>    
     </tr>
     <xsl:for-each select="goa/package">
       <tr> <!-- Accessing by node location -->
@@ -22,7 +22,7 @@
         <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-       
+       <td><xsl:value-of select="sum(/goa/taxcharge,price)"/></td>
       </tr>
     </xsl:for-each>
   </table>
