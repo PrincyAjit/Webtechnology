@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="packages.xsl" type="text/xsl"?>
-<packages>
+<packages xmlns:xlink="http://www.w3.org/1999/xlink">
 	<goa taxcharge="1000">
 		<about xlink:type="simple" xlink:href="https://www.w3schools.com" xlink:show="new">Click here to know about Goa!</about> <!-- xlink -->
 		<taxcharge>1000</taxcharge>
