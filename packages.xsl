@@ -7,9 +7,9 @@
          <body style="background-color:#E3E2DF;font-family:verdana;">
 		 <center><h1>Packages</h1></center>
 		 <h2>Goa</h2> <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
+ <u><b> <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
 	   <text x="0" y="15" fill="purple"><xsl:value-of select="packages/goa/about"/></text>
-  </a>
+	 </a></b></u>
   Sorry, your browser does not support inline SVG.
 </svg>
             <table border = "1">
