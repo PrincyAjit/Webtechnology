@@ -15,7 +15,8 @@
   Sorry, your browser does not support inline SVG.
 			</svg></b></u>
             <table border = "1">
-               <tr bgcolor = "#3b3a30" style="color: white;">	 
+               <tr bgcolor = "#3b3a30" style="color: white;">
+		       <th>S.no</th>
                   <th>Package name</th>
       <th>Nights</th>
       <th>Itinerary</th>
@@ -26,6 +27,7 @@
 					
                <xsl:for-each select = "/packages/goa/package">
                   <tr bgcolor="#c0ded9"> <!-- Accessing by node location -->
+	<td><xsl:value-of select = "position()"/></td>
         <td><xsl:value-of select="name"/></td>
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
