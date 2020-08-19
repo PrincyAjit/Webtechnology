@@ -28,7 +28,7 @@
         <td><xsl:value-of select="itinerary"/></td>
 	<td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
 	<td><xsl:value-of select="ceiling(taxcharge)"/></td>
-       <xsl:value-of select="sum(taxcharge|price)"/>
+	<td><xsl:value-of select="ceiling(sum(taxcharge|price))"/></td>
         
       </tr>
                </xsl:for-each>
