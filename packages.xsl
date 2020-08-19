@@ -17,6 +17,7 @@
       <th>Price</th>
       <th>Nights</th>
       <th>Itinerary</th>
+	<th>Taxes</th>
       <th>Total(Inclusive of taxes)</th>	  
                </tr>
 					
@@ -26,7 +27,8 @@
         <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(price|price)"/></td>
+	<td><xsl:value-of select="ceiling(taxcharge)"/></td>
+       <xsl:value-of select="sum((taxcharge|price)[number(.) = .])"/>
         
       </tr>
                </xsl:for-each>
