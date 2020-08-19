@@ -7,7 +7,7 @@
          <body>
             
 		 <h3>Andaman</h3>
-  <div><xsl:value-of select="/packages/andaman/about"/></div>
+  <div><xsl:value-of select="/packages/andaman/child::about"/></div>
    <table border="1">
     <tr>
       <th>Package name</th>
@@ -16,7 +16,7 @@
       <th>Itinerary</th>
       <th>Total(Inclusive of taxes)</th>
     </tr>
-    <xsl:for-each select="child:: andaman/package">
+    <xsl:for-each select="/packages/andaman/package">
       <tr> <!-- Accessing by node type -->
         <td><xsl:value-of select="name"/></td>
         <td><xsl:value-of select="('Rs.','',price)"/></td>
