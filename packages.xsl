@@ -28,7 +28,7 @@
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
 	<td><xsl:value-of select="ceiling(taxcharge)"/></td>
-       <xsl:value-of select="sum((taxcharge|price)[number(.) = .])"/>
+       <xsl:value-of select="sum(taxcharge|price)"/>
         
       </tr>
                </xsl:for-each>
