@@ -5,7 +5,7 @@
    <xsl:template match = "/">
       <html>
          <body>
-		 <p><xsl:value-of select="packages/goa/about"/></p>
+		 <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank"><p><xsl:value-of select="packages/goa/about"/></p></a>
          </body>
       </html>
    </xsl:template>
