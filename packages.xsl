@@ -7,8 +7,8 @@
          <body>
 		 
 		<svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <a xlink:href="https://www.w3schools.com/graphics/" target="_blank">
-    <text x="0" y="15"><xsl:value-of select="packages/goa/about"/></text>
+  <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
+    <text x="10" y="15"><xsl:value-of select="packages/goa/about"/></text>
   </a>
   Sorry, your browser does not support inline SVG.
 </svg>
