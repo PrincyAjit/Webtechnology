@@ -31,27 +31,7 @@
 		 
 		 
 		 <h2>Manali</h2>
-     <table border = "1">
-               <tr bgcolor = "#9acd32">	 
-                  <th>Package name</th>
-      <th>Price</th>
-      <th>Nights</th>
-      <th>Itinerary</th>
-      <th>Total(Inclusive of taxes)</th>	  
-               </tr>
-
-               <xsl:for-each select = "/packages/manali/package[price > 15000]">
-                  <tr>	 
-                     <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
-        <td><xsl:value-of select="nightcount"/></td>
-        <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(price|price)"/></td>	 
-                  </tr>	
-               </xsl:for-each>
-	
-	
-            </table>
+     
          </body>
       </html>
    </xsl:template>
