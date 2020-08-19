@@ -21,7 +21,7 @@
       <th>Itinerary</th>
 	<th>Price</th>
 	<th>Taxes</th>
-      <th>Total(Inclusive of taxes)</th>	  
+      <th>Total(Price+Taxes)</th>	  
                </tr>
 					
                <xsl:for-each select = "/packages/goa/package">
@@ -51,16 +51,18 @@
 		 <h3>Packages greater than 15000</h3>
      <table border = "1">
                <tr bgcolor = "#3b3a30" style="color: white;">	 
+		       <th>S.no</th>
                   <th>Package name</th>
            <th>Nights</th>
      	 <th>Itinerary</th>
 	 <th>Price</th>
 	<th>Taxes</th>
-      <th>Total(Inclusive of taxes)</th>	  
+     <th>Total(Price+Taxes)</th>	  	  
                </tr >
 
                <xsl:for-each select = "/packages/manali/package[price > 15000]">
-                  <tr bgcolor="#c0ded9">	 
+                  <tr bgcolor="#c0ded9">	
+			  <td><xsl:value-of select = "position()"/></td>
                      <td><xsl:value-of select="name"/></td>
               <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
@@ -75,16 +77,18 @@
 		 <h3>Packages lesser than 15000</h3>
 		 <table border = "1">
                <tr bgcolor = "#3b3a30" style="color: white;">	 
+		       <th>S.no</th>
                   <th>Package name</th>
            <th>Nights</th>
      	 <th>Itinerary</th>
 	 <th>Price</th>
 	<th>Taxes</th>
-      <th>Total(Inclusive of taxes)</th>	  
+      <th>Total(Price+Taxes)</th>	  	  
                </tr>
 
                <xsl:for-each select = "/packages/manali/package[price &lt; 15000]">
                   <tr bgcolor="#c0ded9">	 
+			  <td><xsl:value-of select = "position()"/></td>
                      <td><xsl:value-of select="name"/></td>
               <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
@@ -106,16 +110,18 @@
 			 </svg></u></b>
             <table border = "1">
                <tr bgcolor = "#3b3a30" style="color: white;" >	 
+		       <th>S.no</th>
                 <th>Package name</th>
            <th>Nights</th>
      	 <th>Itinerary</th>
 	 <th>Price</th>
 	<th>Taxes</th>
-      <th>Total(Inclusive of taxes)</th>	  
+     <th>Total(Price+Taxes)</th>	  	  
                </tr>
 					
                <xsl:for-each select = "/packages/andaman/package">
                   <tr bgcolor="#c0ded9"> <!-- Accessing by node location -->
+			  <td><xsl:value-of select = "position()"/></td>
         <td><xsl:value-of select="name"/></td>
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
