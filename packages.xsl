@@ -4,7 +4,8 @@
 
    <xsl:template match = "/">
       <html>
-         <body>
+         <body style="background-color:#E3E2DF;">
+		 <center>Packages</center>
 		 <h2>Goa</h2> <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
 	   <text x="0" y="15"><xsl:value-of select="packages/goa/about"/></text>
@@ -39,7 +40,7 @@
 		 
 		 <h2>Manali</h2> <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
-	   <text x="0" y="15"><xsl:value-of select="packages/goa/about"/></text>
+	   <text x="0" y="15"><xsl:value-of select="packages/manali/about"/></text>
   </a>
   Sorry, your browser does not support inline SVG.
 </svg>
@@ -47,19 +48,21 @@
      <table border = "1">
                <tr bgcolor = "#9acd32">	 
                   <th>Package name</th>
-      <th>Price</th>
-      <th>Nights</th>
-      <th>Itinerary</th>
+           <th>Nights</th>
+     	 <th>Itinerary</th>
+	 <th>Price</th>
+	<th>Taxes</th>
       <th>Total(Inclusive of taxes)</th>	  
                </tr>
 
                <xsl:for-each select = "/packages/manali/package[price > 15000]">
                   <tr>	 
                      <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
-        <td><xsl:value-of select="nightcount"/></td>
+              <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(price|price)"/></td>	 
+	<td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
+      <td><xsl:value-of select="ceiling(taxcharge)"/></td>
+	<td><xsl:value-of select="ceiling(sum(taxcharge|price))"/></td> 
                   </tr>	
                </xsl:for-each>
 	
@@ -69,19 +72,21 @@
 		 <table border = "1">
                <tr bgcolor = "#9acd32">	 
                   <th>Package name</th>
-      <th>Price</th>
-      <th>Nights</th>
-      <th>Itinerary</th>
+           <th>Nights</th>
+     	 <th>Itinerary</th>
+	 <th>Price</th>
+	<th>Taxes</th>
       <th>Total(Inclusive of taxes)</th>	  
                </tr>
 
                <xsl:for-each select = "/packages/manali/package[price &lt; 15000]">
                   <tr>	 
                      <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
-        <td><xsl:value-of select="nightcount"/></td>
+              <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(price|price)"/></td>	 
+      <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
+      <td><xsl:value-of select="ceiling(taxcharge)"/></td>
+	<td><xsl:value-of select="ceiling(sum(taxcharge|price))"/></td> 	 
                   </tr>	
                </xsl:for-each>
 	
@@ -90,26 +95,28 @@
 
  <h2>Andaman</h2>  <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
-	   <text x="0" y="15"><xsl:value-of select="packages/goa/about"/></text>
+	   <text x="0" y="15"><xsl:value-of select="packages/andaman/about"/></text>
   </a>
   Sorry, your browser does not support inline SVG.
 </svg>
             <table border = "1">
                <tr bgcolor = "#9acd32">	 
-                  <th>Package name</th>
-      <th>Price</th>
-      <th>Nights</th>
-      <th>Itinerary</th>
+                <th>Package name</th>
+           <th>Nights</th>
+     	 <th>Itinerary</th>
+	 <th>Price</th>
+	<th>Taxes</th>
       <th>Total(Inclusive of taxes)</th>	  
                </tr>
 					
                <xsl:for-each select = "/packages/andaman/package">
                   <tr> <!-- Accessing by node location -->
         <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(price|price)"/></td>
+      <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
+      <td><xsl:value-of select="ceiling(taxcharge)"/></td>
+	<td><xsl:value-of select="ceiling(sum(taxcharge|price))"/></td> 
         
       </tr>
                </xsl:for-each>
