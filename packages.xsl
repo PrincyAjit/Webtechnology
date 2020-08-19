@@ -4,13 +4,7 @@
 
    <xsl:template match = "/">
       <html>
-	      <head>
-  <title>Packages</title>
-  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
-   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
-</head>
-         <body style="background-color:#E3E2DF;">
+         <body style="background-color:#E3E2DF;font-family:verdana;">
 		 <center><h1>Packages</h1></center>
 		 <h2>Goa</h2> <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
