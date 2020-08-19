@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE packages SYSTEM "packages.dtd">
 <?xml-stylesheet href="packages.xsl" type="text/xsl"?>
 <packages xmlns:xlink="http://www.w3.org/1999/xlink">
 	<goa>
