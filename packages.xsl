@@ -7,7 +7,7 @@
          <body>
             
 		 <h3>Andaman</h3>
-  <div><xsl:value-of select="/packages/andaman/child::about"/></div>
+
    <table border="1">
     <tr>
       <th>Package name</th>
