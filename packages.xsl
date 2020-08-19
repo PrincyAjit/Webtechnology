@@ -6,7 +6,9 @@
       <html>
          <body>
 		 <h1>Yes!yo</h1>
+		 <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
 		 <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank"><xsl:value-of select="packages/goa/about"/></a>
+		 </svg>
          </body>
       </html>
    </xsl:template>
