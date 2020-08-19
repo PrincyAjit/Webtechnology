@@ -2,7 +2,7 @@
 <?xml-stylesheet href="packages.xsl" type="text/xsl"?>
 <packages xmlns:xlink="http://www.w3.org/1999/xlink">
 	<goa taxcharge="1000">
-		<about >Click here to know about Goa!</about> <!-- xlink -->
+		<about >Know about Goa!</about> <!-- xlink -->
 		
 		<package>
 			<name > Best of Goa </name>
@@ -55,7 +55,7 @@
 		</package>
  	</goa>
  	<manali taxcharge="1500">
- 		<about>Click here to know about Manali!</about> <!-- xlink -->
+ 		<about>Know about Manali!</about> <!-- xlink -->
  		<package>
 			<name> Sarthak Resort, Manali - Volvo </name>
 			<price>6499 </price>
@@ -101,7 +101,7 @@
 		</package>
  	</manali>	
  	<andaman taxcharge="2000">
- 		<about >Click here to know about Andaman!</about> <!-- xlink -->
+ 		<about >Know about Andaman!</about> <!-- xlink -->
  		<package>
 			<name> Mini Andaman </name>
 			<price> 15999 </price>
