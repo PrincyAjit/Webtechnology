@@ -12,7 +12,7 @@
    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 </head>
          <body style="background-color:#E3E2DF;">
-		 <center>Packages</center>
+		 <center><h1>Packages</h1></center>
 		 <h2>Goa</h2> <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
 	   <text x="0" y="15"><xsl:value-of select="packages/goa/about"/></text>
@@ -47,7 +47,7 @@
 		 
 		 <h2>Manali</h2> <svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
-	   <text x="0" y="15"><xsl:value-of select="packages/manali/about"/></text>
+	   <text x="0" y="25"><xsl:value-of select="packages/manali/about"/></text>
   </a>
   Sorry, your browser does not support inline SVG.
 </svg>
