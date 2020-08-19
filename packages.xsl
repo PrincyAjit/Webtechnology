@@ -7,9 +7,9 @@
          <body style="background-color:#E3E2DF;font-family:verdana;">
 		 <center><h1>Packages</h1></center>
 		 <h2>Goa</h2>
-		<u> <b><svg height="30" width="300" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<u> <b><svg height="40" width="500" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
-	   <text x="0" y="15" fill="purple"><xsl:value-of select="packages/goa/about"/></text>
+	   <text x="0" y="15" fill="blue"><xsl:value-of select="packages/goa/about"/></text>
 	 </a>
   Sorry, your browser does not support inline SVG.
 			</svg></b></u>
@@ -40,9 +40,9 @@
 		 
 		 
 		 <h2>Manali</h2> 
-		 <b><u><svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
+		 <b><u><svg height="30" width="500" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
-	   <text  x="0" y="15" fill="purple"><xsl:value-of select="packages/manali/about"/></text>
+	   <text  x="0" y="15" fill="blue"><xsl:value-of select="packages/manali/about"/></text>
   </a>
   Sorry, your browser does not support inline SVG.
 			 </svg></u></b>
@@ -96,9 +96,9 @@
             </table>
 
  <h2>Andaman</h2> 
-		 <b><u><svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
+		 <b><u><svg height="30" width="500" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
-	   <text  x="0" y="15" fill="purple"><xsl:value-of select="packages/andaman/about"/></text>
+	   <text  x="0" y="15" fill="blue"><xsl:value-of select="packages/andaman/about"/></text>
   </a>
   Sorry, your browser does not support inline SVG.
 			 </svg></u></b>
