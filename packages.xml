@@ -3,10 +3,10 @@
 <packages xmlns:xlink="http://www.w3.org/1999/xlink">
 	<goa taxcharge="1000">
 		<about >Click here to know about Goa!</about> <!-- xlink -->
-		<taxcharge>1000</taxcharge>
+		
 		<package>
 			<name > Best of Goa </name>
-			<price>5999.60</price>
+			<price>5999</price>
 			<nightcount>3</nightcount>
 			<inclusions>3 star hotels,vehicle Transfer,Meals,Sightseeing</inclusions>
 			<itinerary>
@@ -19,6 +19,7 @@
 				Day 4 - Departure from Goa
 				Transfers from Hotel to Airport (On Sharing Basis).
 			</itinerary>
+			<taxcharge>1101.99</taxcharge>
 		</package>
 		<package>
 			<name> Amazing Goa </name>
@@ -35,6 +36,7 @@
 				Day 4 - Departure from Goa
 				Transfers from Hotel to Airport (On Sharing Basis).
 			</itinerary>
+			<taxcharge>1301.99</taxcharge>
 		</package>
 		<package>
 			<name> Scenic Goa </name>
@@ -49,11 +51,11 @@
 				Day 3 - Depart Goa
 				Transfers from Hotel to Airport (On Sharing Basis)
 			</itinerary>
+			<taxcharge>1201.99</taxcharge>
 		</package>
  	</goa>
  	<manali taxcharge="1500">
  		<about>Click here to know about Manali!</about> <!-- xlink -->
- 		<taxcharge>1500</taxcharge>
  		<package>
 			<name> Sarthak Resort, Manali - Volvo </name>
 			<price>6499 </price>
@@ -67,6 +69,7 @@
 				Day 4 - Manali-Kullu
 				Day 5 - Manali - Delhi Volvo (Overnight)
 			</itinerary>
+			<taxcharge>1099.50</taxcharge>
 		</package>
 		<package>
 			<name>  Utopia Resort Manali Volvo - Ex Delhi</name>
@@ -80,6 +83,7 @@
 				Day 4 - Visit Kullu-Manali
 				Day 5 - Manali - Delhi Volvo (Overnight)
 			</itinerary>
+			<taxcharge>1251.50</taxcharge>
 		</package>
 		<package>
 			<name>Astounding Manali with Flight - Ex Delhi  </name>
@@ -93,11 +97,11 @@
 				Day 4 - Drive from Manali to Chandigarh (325 km/approx. 8 hours)
 				After breakfast, drive to Delhi for the return journey. TOUR ENDS.
 			</itinerary>
+			<taxcharge>3250.85</taxcharge>
 		</package>
  	</manali>	
  	<andaman taxcharge="2000">
  		<about >Click here to know about Andaman!</about> <!-- xlink -->
- 		<taxcharge>2000</taxcharge>
  		<package>
 			<name> Mini Andaman </name>
 			<price> 15999 </price>
@@ -110,6 +114,7 @@
 				Day 4 - Depart Form Havelock Harbour - Port Blair Harbour to Hotel - Enjoy Shopping
 				Day 5 - Depart from Port Blair
 			</itinerary>
+			<taxcharge>2341.99</taxcharge>
 		</package>
 		<package>
 			<name> Best of Andaman </name>
@@ -124,6 +129,7 @@
 				Day 5 - Sightseeing and Drop at Neil Island Harbour - Port Blair Harbour To Hotel - Enjoy Shopping
 				Day 6 - Depart from Portblair
 			</itinerary>
+			<taxcharge>2701.99</taxcharge>
 		</package>
 		<package>
 			<name> Simply Andaman </name>
@@ -137,6 +143,7 @@
 				Day 4 - Havelock - Port Blair
 				Day 5 - Departure from Port Blair
 			</itinerary>
+			<taxcharge>4500.99</taxcharge>
 		</package>
  	</andaman> 		
 </packages>	
