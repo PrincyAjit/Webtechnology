@@ -7,7 +7,6 @@
          <body style="background-color:#E3E2DF;font-family:verdana;">
 		 <center><h1>Packages</h1></center>
 		 <h2>Goa</h2>
-		 <h2><xsl:value-of select ="packages/name(.)"/></h2>
 		<u> <b><svg height="40" width="500" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://en.wikipedia.org/wiki/Goa" target="_blank">
 	   <text x="0" y="15" fill="blue"><xsl:value-of select="packages/goa/about"/></text>
