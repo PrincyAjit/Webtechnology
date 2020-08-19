@@ -63,7 +63,7 @@
       <th>Total(Inclusive of taxes)</th>	  
                </tr>
 
-               <xsl:for-each select = "/packages/manali/package[price < 15000]">
+               <xsl:for-each select = "/packages/manali/package[price &lt; 15000]">
                   <tr>	 
                      <td><xsl:value-of select="name"/></td>
         <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
