@@ -5,10 +5,10 @@
    <xsl:template match = "/">
       <html>
          <body>
-		 <h1>Yes!</h1>
+		 
 		<svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a xlink:href="https://www.w3schools.com/graphics/" target="_blank">
-    <text x="0" y="15" fill="red">Know more about goa!</text>
+    <text x="0" y="15"><xsl:value-of select="packages/goa/about"/></text>
   </a>
   Sorry, your browser does not support inline SVG.
 </svg>
