@@ -23,7 +23,7 @@
                <xsl:for-each select = "/packages/goa/package">
                   <tr> <!-- Accessing by node location -->
         <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
+        <td><xsl:value-of select="concat('Rs.','',ceil(price))"/></td>  <!-- string concatenation -->
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
        <td><xsl:value-of select="sum(price|price)"/></td>
@@ -54,7 +54,7 @@
                <xsl:for-each select = "/packages/manali/package[price > 15000]">
                   <tr>	 
                      <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
+        <td><xsl:value-of select="concat('Rs.','',ceil(price))"/></td>  <!-- string concatenation -->
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
        <td><xsl:value-of select="sum(price|price)"/></td>	 
@@ -76,7 +76,7 @@
                <xsl:for-each select = "/packages/manali/package[price &lt; 15000]">
                   <tr>	 
                      <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
+        <td><xsl:value-of select="concat('Rs.','',ceil(price))"/></td>  <!-- string concatenation -->
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
        <td><xsl:value-of select="sum(price|price)"/></td>	 
@@ -104,7 +104,7 @@
                <xsl:for-each select = "/packages/andaman/package">
                   <tr> <!-- Accessing by node location -->
         <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
+        <td><xsl:value-of select="concat('Rs.','',ceil(price))"/></td>  <!-- string concatenation -->
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
        <td><xsl:value-of select="sum(price|price)"/></td>
