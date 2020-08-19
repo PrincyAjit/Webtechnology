@@ -5,76 +5,27 @@
    <xsl:template match = "/">
       <html>
          <body>
-            <h2>Goa</h2>
-            <table border = "1">
-               <tr bgcolor = "#9acd32">	 
-                  <th>Package name</th>
+            
+		 <h3>Andaman</h3>
+  <div><xsl:value-of select="/packages/andaman/about"/></div>
+   <table border="1">
+    <tr>
+      <th>Package name</th>
       <th>Price</th>
       <th>Nights</th>
       <th>Itinerary</th>
-      <th>Total(Inclusive of taxes)</th>	  
-               </tr>
-					
-               <xsl:for-each select = "/packages/goa/package">
-                  <tr> <!-- Accessing by node location -->
+      <th>Total(Inclusive of taxes)</th>
+    </tr>
+    <xsl:for-each select="child:: andaman/package">
+      <tr> <!-- Accessing by node type -->
         <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
+        <td><xsl:value-of select="('Rs.','',price)"/></td>
         <td><xsl:value-of select="nightcount"/></td>
         <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(price|price)"/></td>
-        
+        <td><xsl:value-of select="sum(price|price)"/></td>
       </tr>
-               </xsl:for-each>
-					
-              
-            </table>
-		 
-		 
-		 <h2>Manali</h2>
-		 <h3>Packages greater than 15000</h3>
-     <table border = "1">
-               <tr bgcolor = "#9acd32">	 
-                  <th>Package name</th>
-      <th>Price</th>
-      <th>Nights</th>
-      <th>Itinerary</th>
-      <th>Total(Inclusive of taxes)</th>	  
-               </tr>
-
-               <xsl:for-each select = "/packages/manali/package[price > 15000]">
-                  <tr>	 
-                     <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
-        <td><xsl:value-of select="nightcount"/></td>
-        <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(price|price)"/></td>	 
-                  </tr>	
-               </xsl:for-each>
-	
-	
-            </table>
-		 <h3>Packages lesser than 15000</h3>
-		 <table border = "1">
-               <tr bgcolor = "#9acd32">	 
-                  <th>Package name</th>
-      <th>Price</th>
-      <th>Nights</th>
-      <th>Itinerary</th>
-      <th>Total(Inclusive of taxes)</th>	  
-               </tr>
-
-               <xsl:for-each select = "/packages/manali/package[price &lt; 15000]">
-                  <tr>	 
-                     <td><xsl:value-of select="name"/></td>
-        <td><xsl:value-of select="concat('Rs.','',price)"/></td>  <!-- string concatenation -->
-        <td><xsl:value-of select="nightcount"/></td>
-        <td><xsl:value-of select="itinerary"/></td>
-       <td><xsl:value-of select="sum(price|price)"/></td>	 
-                  </tr>	
-               </xsl:for-each>
-	
-	
-            </table>
+    </xsl:for-each>
+  </table>
          </body>
       </html>
    </xsl:template>
