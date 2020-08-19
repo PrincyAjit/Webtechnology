@@ -1,0 +1,26 @@
+<!ELEMENT packages (goa,manali,andaman)>  
+<!ELEMENT goa (about,package+)> 
+<!ELEMENT package (name,price,nightcount,inclusions,itinerary,taxcharge)> 
+<!ELEMENT name (#PCDATA)> 
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT nightcount (#PCDATA)>
+<!ELEMENT inclusions (#PCDATA)>
+<!ELEMENT itinerary(#PCDATA)>
+<!ELEMENT taxcharge(#PCDATA)>
+<!ELEMENT manali (about,package+)> 
+<!ELEMENT package (name,price,nightcount,inclusions,itinerary,taxcharge)> 
+<!ELEMENT name (#PCDATA)> 
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT nightcount (#PCDATA)>
+<!ELEMENT inclusions (#PCDATA)>
+<!ELEMENT itinerary(#PCDATA)>
+<!ELEMENT taxcharge(#PCDATA)>
+<!ELEMENT andaman (about,package+)> 
+<!ELEMENT package (name,price,nightcount,inclusions,itinerary,taxcharge)> 
+<!ELEMENT name (#PCDATA)> 
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT nightcount (#PCDATA)>
+<!ELEMENT inclusions (#PCDATA)>
+<!ELEMENT itinerary(#PCDATA)>
+<!ELEMENT taxcharge(#PCDATA)>
+
