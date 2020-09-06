@@ -147,7 +147,7 @@ xmlhttp.onreadystatechange = function() {
     var myObj = JSON.parse(this.responseText);
  
    for(i=0;i<3;i++){
-      document.getElementById("about"+i+"").innerHTML=myObj.about.(about+i);
+      document.getElementById("about"+i+"").innerHTML=myObj.about["about"+i+""];
      
     }
    
