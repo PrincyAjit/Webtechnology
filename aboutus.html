@@ -148,7 +148,9 @@ xmlhttp.onreadystatechange = function() {
  
    for(i=0;i<3;i++){
      var a=toString(i);
-      document.getElementById("about"+i+"").innerHTML=myObj.about["about"+a];
+     var b="about"+a;
+     console.log(b);
+      console.log(myObj.about["about"+a]);
      
     }
    
