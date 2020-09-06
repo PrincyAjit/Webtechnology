@@ -1,4 +1,4 @@
-[
+{
    "about": [
       {
          "about1": "We are a leading online travel company in India providing a 'best in class' customer experience with the goal to be 'India's Travel Planner'. Through our website, www.yatra.com, our mobile applications and our other associated platforms, leisure and business travelers can explore, research, compare prices and book a wide range of services catering to their travel needs.",
@@ -11,22 +11,22 @@
       {
          "name": "Great Peers",
          "desc": "We are a team of achievers. Our folks are ambitious, go getters, fun loving, aware and proactive",
-         "image_path": "images/greatpeers.png",
+         "image_path": "images/greatpeers.png"
       }
       {
          "name": "Most Trusted Brand",
          "desc": "With a strong focus on fulfilling customer needs and service, we are the most trusted online travel brand",
-         "image_path": "images/trustedbrand.png",
+         "image_path": "images/trustedbrand.png"
       }
        {
          "name": "Fun @ Work",
          "desc": "Hackathons, Cricket Matches, Festival Celebrations, Yummy Food Stalls,Surprise Games…. working with us is never boring!",
-         "image_path": "images/fun@work.png",
+         "image_path": "images/fun@work.png"
       }
        {
          "name": "Open Culture",
          "desc": "Every view and opinion is heard and respected. We talk to people not their designations.",
-         "image_path": "images/openculture.png",
+         "image_path": "images/openculture.png"
       }
       
    ],
@@ -52,4 +52,4 @@
          "image_path": "images/activity.png",
       }
    ]
-]
+}
