@@ -146,7 +146,7 @@ xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
  
-   for(i=0;i<3;i++){
+   for(var i=0;i<3;i++){
      var a=toString(i);
      console.log(a);
      var b="about"+a;
