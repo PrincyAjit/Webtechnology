@@ -157,8 +157,8 @@ xmlhttp.onreadystatechange = function() {
       document.getElementByID("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[i].desc;
     }
     for(var i=0;i<6;i++){
-      document.getElementByID("serviceimg"+i+"").src=myObj.services[+i+].image_path;
-      document.getElementByID("servicename"+i+"").innerHTML=myObj.services[+i+].name;
+      document.getElementByID("serviceimg"+i+"").src=myObj.services[i].image_path;
+      document.getElementByID("servicename"+i+"").innerHTML=myObj.services[i].name;
       
     }
   }
