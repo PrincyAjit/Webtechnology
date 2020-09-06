@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+
+</head>
+<body style="background-color:#E3E2DF;">
+<nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" height="50" width="55"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div style="margin-left: 900px;" class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul  class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="homepage.html"><b>Home</b><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="gallery.html" target=""><b>Gallery</b></a> 
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="signup.html" target=""><b>Signup</b></a> 
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="login.html" target=""><b>Login</b></a> 
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="aboutus.html" target=""><b>About Us</b></a> 
+      </li>
+      
+      
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+    </ul>
+   
+  </div>
+     
+</nav>
+<br>
+  <center><h2>About Explore</h2></center> 
+<!-- About -->
+  <div class="about"> 
+    <p id="about1"></p>
+    <p id="about2"></p>
+    <p id="about3"></p>
+  </div>
+
+
+<!-- Why work at Explore -->
+  <center><h3>Why Explore?</h3>
+  <p>Working at Yatra is bound to be one of the most amazing experiences of your life. The bonds you build, the friends you make and the stupendous learning opportunities you get, are just some of these.</p></center>
+  <div class="row">
+    <div class="col-md-2 col-sm-2">
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <img src="" height="30" width="30" id="whyimg1">
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <p id="whyname1"></p>
+          <p id="whydesc1"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <img src="" height="30" width="30" id="whyimg2">
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <p id="whyname2"></p>
+          <p id="whydesc2"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <img src="" height="30" width="30" id="whyimg3">
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <p id="whyname3"></p>
+          <p id="whydesc3"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <img src="" height="30" width="30" id="whyimg4">
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <p id="whyname4"></p>
+          <p id="whydesc4"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-2">
+    </div>
+    </div>
+  
+<!-- Our Services -->
+<center><h3>Our Services</h3></center>
+<div class="row">
+  <div class="col-md-3 col-sm-3">
+    
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <img src="" height="30" width="30" id="serviceimg1"><br>
+    <p id="servicename1"></p>
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <img src="" height="30" width="30" id="serviceimg2"><br>
+    <p id="servicename2"></p>
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <img src="" height="30" width="30" id="serviceimg3"><br>
+    <p id="servicename3"></p>
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <img src="" height="30" width="30" id="serviceimg4"><br>
+    <p id="servicename4"></p>
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <img src="" height="30" width="30" id="serviceimg5"><br>
+    <p id="servicename5"></p>
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <img src="" height="30" width="30" id="serviceimg6"><br>
+    <p id="servicename6"></p>
+  </div>
+  <div class="col-md-3 col-sm-3">
+
+  </div>
+</div>
+
+
+<!-- Javascript -->
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    console.log(myObj);
+  }
+};
+xmlhttp.open("GET", "https://princyajit.github.io/Webtechnology/aboutus.JSON", true);
+xmlhttp.send();
+</script>
+
+</body>
+</html>  
