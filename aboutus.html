@@ -145,9 +145,8 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = (this.response);
-    console.log(myObj.about);
-    console.log(myObj.workwithus_reasons);
-    console.log(myObj.services);
+    console.log(typeof(myObj));
+   
   }
 };
 xmlhttp.open("GET", "https://princyajit.github.io/Webtechnology/aboutus.JSON", true);
