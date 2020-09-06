@@ -1,4 +1,4 @@
-{
+[
    "about": [
       {
          "about1": "We are a leading online travel company in India providing a 'best in class' customer experience with the goal to be 'India's Travel Planner'. Through our website, www.yatra.com, our mobile applications and our other associated platforms, leisure and business travelers can explore, research, compare prices and book a wide range of services catering to their travel needs.",
@@ -52,4 +52,4 @@
          "image_path": "images/activity.png",
       }
    ]
-}
+]
