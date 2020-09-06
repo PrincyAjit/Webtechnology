@@ -146,8 +146,8 @@ xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
  
-   for(i=1;i<=4;i++){
-      console.log(myObj.workwithus_reasons[i].image_path);
+   for(i=0;i<3;i++){
+      document.getElementById("about"+i+"").innerHTML=myObj.about.(about+i);
      
     }
    
