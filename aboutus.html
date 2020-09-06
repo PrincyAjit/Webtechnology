@@ -144,10 +144,11 @@
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    var myObj = JSON.parse(this.response);
-    var myObj1 = JSON.parse(this.responseText);
-    console.log(typeof(myObj));
-    console.log(typeof(myObj1));
+    var myObj = JSON.parse(this.responseText);
+    console.log(myObj.about.about1);
+    console.log(myObj.workwithus_reasons[0].name);
+    console.log(myObj.services[0].image_path);
+   
    
   }
 };
