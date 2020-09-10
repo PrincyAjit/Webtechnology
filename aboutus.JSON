@@ -22,18 +22,18 @@
    ],
    "services": [{
       "name": "Flights",
-      "image_path": "images/flight.png"
+      "image_path": "images/flight.PNG"
    }, {
       "name": "Hotels",
-      "image_path": "images/hotel.png"
+      "image_path": "images/hotel.PNG"
    }, {
       "name": "Trains",
-      "image_path": "images/train.png"
+      "image_path": "images/train.PNG"
    }, {
       "name": "Holidays",
-      "image_path": "images/holiday.png"
+      "image_path": "images/holiday.PNG"
    }, {
       "name": "Activities",
-      "image_path": "images/activity.png"
+      "image_path": "images/activity.PNG"
    }]
 }
