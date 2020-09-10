@@ -128,13 +128,13 @@ xmlhttp.onreadystatechange = function() {
 //     for(i=0;i<3;i++){
 //       document.getElementById("about"+i+"").innerHTML=myObj.about["about"+String(i)];
 //     }
-//     for(i=0;i<4;i++){
-//       document.getElementByID("whyname"+i+"").innerHTML=myObj.workwithus_reasons[i].name;
-//       document.getElementByID("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[i].desc;
-//     }
+    for(i=0;i<4;i++){
+      document.getElementById("whyname"+i+"").innerHTML=myObj.workwithus_reasons[i].name;
+      document.getElementById("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[i].desc;
+    }
     for(i=0;i<6;i++){
-      document.getElementByID("serviceimg"+i+"").src=myObj.services[i].image_path;
-      document.getElementByID("servicename"+i+"").innerHTML=myObj.services[i].name;
+      document.getElementById("serviceimg"+i+"").src=myObj.services[i].image_path;
+      document.getElementById("servicename"+i+"").innerHTML=myObj.services[i].name;
     }
   }
 };
