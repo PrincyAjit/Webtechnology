@@ -35,5 +35,9 @@
    }, {
       "name": "Activities",
       "image_path": "images/activity.PNG"
-   }]
+   }, {
+      "name": "Bus",
+      "image_path": "images/bus.PNG"
+   }
+   ]
 }
