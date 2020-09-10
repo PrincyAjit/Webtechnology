@@ -55,79 +55,60 @@
 
 <!-- Why work at Explore -->
   <center><h3>Why Explore?</h3>
-  <p>Working at Yatra is bound to be one of the most amazing experiences of your life. The bonds you build, the friends you make and the stupendous learning opportunities you get, are just some of these.</p></center>
+  <p>Working at Explore is bound to be one of the most amazing experiences of your life. The bonds you build, the friends you make and the stupendous learning opportunities you get, are just some of these.</p></center>
   <div class="row">
-    <div class="col-md-2 col-sm-2">
+    <div class="col-md-4 col-sm-4">
     </div>
     <div class="col-md-4 col-sm-4">
-      <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <img src="" height="60" width="60" id="whyimg0">
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <p id="whyname0"></p>
-          <p id="whydesc0"></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <img src="" height="60" width="60" id="whyimg1">
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <p id="whyname1"></p>
-          <p id="whydesc1"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-4">
-      <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <img src="" height="60" width="60" id="whyimg2">
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <p id="whyname2"></p>
-          <p id="whydesc2"></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <img src="" height="60" width="60" id="whyimg3">
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <p id="whyname3"></p>
-          <p id="whydesc3"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-2 col-sm-2">
+  <table>
+  <tr>
+    <td><p id="whyname0"></p>
+          <p id="whydesc0"></p></td>
+    <td><p id="whyname1"></p>
+          <p id="whydesc1"></p></td>
+  </tr>
+  <tr>
+    <td><p id="whyname2"></p>
+          <p id="whydesc2"></p></td>
+    <td><p id="whyname3"></p>
+          <p id="whydesc3"></p></td>
+  </tr>
+
+</table>
+  </div>
+  <div class="col-md-4 col-sm-4">
     </div>
     </div>
   
 <!-- Our Services -->
 <center><h3>Our Services</h3></center>
 <div class="row">
-  <div class="col-md-4 col-sm-4">
+  <div class="col-md-3 col-sm-3">
     
   </div>
   <div class="col-md-1 col-sm-1">
-    <img src="" height="60" width="60" id="serviceimg0"><br>
+    <img src="" height="30" width="30" id="serviceimg0"><br>
     <p id="servicename0"></p>
   </div>
   <div class="col-md-1 col-sm-1">
-    <img src="" height="60" width="60" id="serviceimg1"><br>
+    <img src="" height="30" width="30" id="serviceimg1"><br>
     <p id="servicename1"></p>
   </div>
-  <div class="col-md-1 cl-sm-1">
-    <img src="" height="60" width="60" id="serviceimg2"><br>
+  <div class="col-md-1 col-sm-1">
+    <img src="" height="30" width="30" id="serviceimg2"><br>
     <p id="servicename2"></p>
   </div>
   <div class="col-md-1 col-sm-1">
-    <img src="" height="60" width="60" id="serviceimg3"><br>
+    <img src="" height="30" width="30" id="serviceimg3"><br>
     <p id="servicename3"></p>
   </div>
   <div class="col-md-1 col-sm-1">
-    <img src="" height="60" width="60" id="serviceimg4"><br>
+    <img src="" height="30" width="30" id="serviceimg4"><br>
     <p id="servicename4"></p>
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <img src="" height="30" width="30" id="serviceimg5"><br>
+    <p id="servicename5"></p>
   </div>
   <div class="col-md-3 col-sm-3">
 
@@ -145,17 +126,16 @@ xmlhttp.onreadystatechange = function() {
     console.log(myObj.workwithus_reasons[0].name);
     console.log(myObj.services[0].image_path);
     for(var i=0;i<3;i++){
-      var a=String(i);
-      document.getElementById("about"+i+"").innerHTML=myObj.about["about"+String(i)];
+      document.getElementById("about"+i+"").innerHTML=myObj.about.myObj.about["about"+String(i)];
     }
     for(var i=0;i<4;i++){
-      document.getElementById("whyimg"+i+"").src=myObj.workwithus_reasons[i].image_path;
-      document.getElementById("whyname"+i+"").innerHTML=myObj.workwithus_reasons[i].name;
-      document.getElementById("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[i].desc;
+      document.getElementByID("whyimg"+i+"").src=myObj.workwithus_reasons[i].image_path;
+      document.getElementByID("whyname"+i+"").innerHTML=myObj.workwithus_reasons[i].name;
+      document.getElementByID("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[i].desc;
     }
-    for(var i=0;i<5;i++){
-      document.getElementById("serviceimg"+i+"").src=myObj.services[i].image_path;
-      document.getElementById("servicename"+i+"").innerHTML=myObj.services[i].name;
+    for(var i=0;i<6;i++){
+      document.getElementByID("serviceimg"+i+"").src=myObj.services[+i+].image_path;
+      document.getElementByID("servicename"+i+"").innerHTML=myObj.services[+i+].name;
       
     }
   }
