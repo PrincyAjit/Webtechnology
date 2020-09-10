@@ -1,0 +1,263 @@
+    body {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 250;
+ }
+
+ p{
+  font-weight: 400;
+  font-size: 20px;
+ }
+
+
+table,tr,td{
+   position:relative;
+   border:1px solid black; 
+   padding:3px;
+
+}
+
+.img{
+    height:200px;
+    width:200px;
+}
+
+.bottom-center{
+position: absolute;
+  bottom: 6px;
+  left: 16px;
+  color:white;
+  font-size:18px;
+}
+
+  .carousel{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+.card-text{
+  font-size: 15px;
+}
+.bg{
+    background-image: url('images/hero_1.jpg');
+    background-repeat: no-repeat;
+
+    background-size: 100% 100%;
+    width:100%;
+    height: 500px;
+  }
+  .img_va{
+    width: 300px;
+    height: 250px;
+  }
+  /*.bottom-center{
+  position: absolute;
+    bottom: 0.5px;
+    left: 120px;
+    color:white;
+    font-size:20px;
+  }*/
+  .zoom:hover {
+     transition: transform 0.8s ease-in-out;
+      transform: scale(1.1);
+  }
+
+  div.left{ margin-left: 70px; } 
+
+/*.column::after {
+  content: '';
+  clear: both;
+  display: block;
+}*/
+/*.column div {
+  position: relative;
+  float: left;
+ }*/
+
+figure {
+   overflow: hidden;
+}
+
+.hover01 figure img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+div.group1{
+  padding:0;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+  width:100%;
+  height:250px;
+}
+
+.margin-left{
+  margin-left: -15px;
+}
+
+@keyframes example1{
+  from {background-image: url('images/northindia.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 250px;
+    
+}
+  to {background-image: url('images/pachmarhi.jpg');
+    background-repeat: no-repeat;
+    background-size:300px 250px;
+}
+}
+
+
+div.group2{
+  padding: 0;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+  width:100%;
+  height:250px;
+  
+}
+
+
+@keyframes example2 {
+  from {background-image: url('images/munnar.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 250px;
+    
+}
+  to {background-image: url('images/kullu.jpg');
+    background-repeat: no-repeat;
+    background-size:300px 250px;
+}
+}
+
+div.group3{
+  padding: 0;
+  animation-name: example3;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+    width:100%;
+  height:250px;
+}
+
+
+@keyframes example3 {
+  0% {background-image:url('images/taj.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 250px;
+    
+}
+  50% {background-image:url('images/srinagar.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 250px;
+}
+100% {background-image:url('images/heritage1.jpg');
+    background-repeat: no-repeat;
+    background-size: 300px 250px;
+}
+}
+
+h1.title{
+   position: absolute;
+   margin-top: 180px;
+   margin-left:100px; 
+   font-family: "Work Sans", sans-serif;
+   font-weight: 900;
+   color: grey;
+   opacity:0.5;
+  }
+h1.title2{
+   position: absolute;
+   margin-top: 270px;
+   margin-left:400px; 
+   font-family: "Work Sans", sans-serif;
+   font-weight: 900;
+    font-size: 28px;   
+  }
+  
+a.headings{
+  text-decoration: underline;
+   text-decoration-style: solid;
+}
+/* unvisited link */
+h3 a:link {
+  color: green;
+}
+
+/* visited link */
+h3 a:visited {
+  color: darkblue;
+}
+
+/* mouse over link */
+h3 a:hover {
+  color: red;
+   text-decoration-style: wavy;
+   text-decoration-color: purple;
+}
+
+/* selected link */
+h3 a:active {
+  color: blue;
+}
+ 
+/*text decoration*/
+.line{
+  text-decoration: underline;
+}
+
+}
+
+
+ol.circle,ul.circle{
+ list-style-type: circle;
+}
+ol.square,ul.square{
+   list-style-type: square;
+}
+ol.upperroman,ul.upperroman{
+   list-style-type: upper-roman;
+}
+ol.disc,ul.disc{
+   list-style-type: disc;
+}
+
+
+
+/*Blurred image with text*/
+*{
+  box-sizing:border-box;
+}
+.blurcontainer {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  width:40%;
+  height:270px;
+  position: absolute;
+  top: 120px;
+  left:400px;
+  background-color: #110c11;
+  opacity:0.8;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
