@@ -7,37 +7,33 @@
 ,
    "workwithus_reasons": [{
          "name": "Great Peers",
-         "desc": "We are a team of achievers. Our folks are ambitious, go getters, fun loving, aware and proactive",
-         
+         "desc": "We are a team of achievers. Our folks are ambitious, go getters, fun loving, aware and proactive"
       }, {
          "name": "Most Trusted Brand",
-         "desc": "With a strong focus on fulfilling customer needs and service, we are the most trusted online travel brand",
-         
+         "desc": "With a strong focus on fulfilling customer needs and service, we are the most trusted online travel brand"
       }, {
          "name": "Fun @ Work",
-         "desc": "Hackathons, Cricket Matches, Festival Celebrations, Yummy Food Stalls,Surprise Games…. working with us is never boring!",
-         
+         "desc": "Hackathons, Cricket Matches, Festival Celebrations, Yummy Food Stalls,Surprise Games…. working with us is never boring!"
       }, {
          "name": "Open Culture",
-         "desc": "Every view and opinion is heard and respected. We talk to people not their designations.",
-         
+         "desc": "Every view and opinion is heard and respected. We talk to people not their designations."
       }
 
    ],
    "services": [{
       "name": "Flights",
-      "image_path": "images/flight.PNG"
+      "image_path": "images/flight.png"
    }, {
       "name": "Hotels",
-      "image_path": "images/hotel.PNG"
+      "image_path": "images/hotel.png"
    }, {
       "name": "Trains",
-      "image_path": "images/train.PNG"
+      "image_path": "images/train.png"
    }, {
       "name": "Holidays",
-      "image_path": "images/holiday.PNG"
+      "image_path": "images/holiday.png"
    }, {
       "name": "Activities",
-      "image_path": "images/activity.PNG"
+      "image_path": "images/activity.png"
    }]
 }
