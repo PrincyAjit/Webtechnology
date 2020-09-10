@@ -126,17 +126,15 @@ xmlhttp.onreadystatechange = function() {
     console.log(myObj.workwithus_reasons[0].name);
     console.log(myObj.services[0].image_path);
     for(i=0;i<3;i++){
-      document.getElementById("about"+i+"").innerHTML=myObj.about.(about+i);
+      document.getElementById("about"+i+"").innerHTML=myObj.about.myObj.about["about"+String(i)];
     }
     for(i=0;i<4;i++){
-      document.getElementByID("whyimg"+i+"").src=myObj.workwithus_reasons[i].image_path;
       document.getElementByID("whyname"+i+"").innerHTML=myObj.workwithus_reasons[i].name;
       document.getElementByID("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[i].desc;
     }
     for(i=0;i<6;i++){
-      document.getElementByID("serviceimg"+i+"").src=myObj.services[+i+].image_path;
-      document.getElementByID("servicename"+i+"").innerHTML=myObj.services[+i+].name;
-      
+      document.getElementByID("serviceimg"+i+"").src=myObj.services[i].image_path;
+      document.getElementByID("servicename"+i+"").innerHTML=myObj.services[i].name;
     }
   }
 };
