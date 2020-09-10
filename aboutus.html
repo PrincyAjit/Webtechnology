@@ -132,10 +132,10 @@ xmlhttp.onreadystatechange = function() {
 //       document.getElementByID("whyname"+i+"").innerHTML=myObj.workwithus_reasons[+i+].name;
 //       document.getElementByID("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[+i+].desc;
 //     }
-//     for(i=0;i<6;i++){
-//       document.getElementByID("serviceimg"+i+"").src=myObj.services[+i+].image_path;
-//       document.getElementByID("servicename"+i+"").innerHTML=myObj.services[+i+].name;
-//     }
+    for(i=0;i<6;i++){
+      document.getElementByID("serviceimg"+i+"").src=myObj.services[+i+].image_path;
+      document.getElementByID("servicename"+i+"").innerHTML=myObj.services[+i+].name;
+    }
   }
 };
 xmlhttp.open("GET", "https://princyajit.github.io/Webtechnology/aboutus.JSON", true);
