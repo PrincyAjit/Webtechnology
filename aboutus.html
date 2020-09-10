@@ -121,9 +121,9 @@ xmlhttp.onreadystatechange = function() {
     console.log(myObj.about['about1']);
     console.log(myObj.workwithus_reasons[0].name);
     console.log(myObj.services[0].image_path);
-//     for(i=0;i<3;i++){
-//       document.getElementById("about"+i+"").innerHTML=myObj.about["about"+String(i)];
-//     }
+    for(i=0;i<3;i++){
+      document.getElementById("about"+i+"").innerHTML=myObj.about["about"+String(i)+""];
+    }
     for(i=0;i<4;i++){
       document.getElementById("whyname"+i+"").innerHTML=myObj.workwithus_reasons[i].name;
       document.getElementById("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[i].desc;
