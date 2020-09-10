@@ -47,31 +47,31 @@
   <center><h2>About Explore</h2></center> 
 <!-- About -->
   <div class="about"> 
-    <p id="about0"></p>
-    <p id="about1"></p>
-    <p id="about2"></p>
+    <p id="about0" align="justify"></p>
+    <p id="about1" align="justify"></p>
+    <p id="about2" align="justify"></p>
   </div>
 
 
 <!-- Why work at Explore -->
   <center><h3>Why Explore?</h3>
-  <p>Working at Explore is bound to be one of the most amazing experiences of your life. The bonds you build, the friends you make and the stupendous learning opportunities you get, are just some of these.</p></center>
+  <p align="justify">Working at Explore is bound to be one of the most amazing experiences of your life. The bonds you build, the friends you make and the stupendous learning opportunities you get, are just some of these.</p></center>
   <div class="row">
     <div class="col-md-4 col-sm-4">
     </div>
     <div class="col-md-4 col-sm-4">
   <table>
   <tr>
-    <td><b><p id="whyname0"></p></b>
-          <p id="whydesc0"></p></td>
-    <td><b><p id="whyname1"></p></b>
-          <p id="whydesc1"></p></td>
+    <td><p id="whyname0"></p>
+    <p id="whydesc0" align="justify"></p></td>
+    <td><p id="whyname1"></p>
+     <p id="whydesc1" align="justify"></p></td>
   </tr>
   <tr>
-    <td><b><p id="whyname2"></p></b>
-          <p id="whydesc2"></p></td>
-    <td><b><p id="whyname3"></p></b>
-          <p id="whydesc3"></p></td>
+    <td><p id="whyname2"></p>
+          <p id="whydesc2" align="justify"></p></td>
+    <td><p id="whyname3"></p>
+          <p id="whydesc3" align="justify"></p></td>
   </tr>
 
 </table>
@@ -126,6 +126,7 @@ xmlhttp.onreadystatechange = function() {
     }
     for(i=0;i<4;i++){
       document.getElementById("whyname"+i+"").innerHTML=myObj.workwithus_reasons[i].name;
+      document.getElementById("whyname"+i+"").style.fontWeight = "900";
       document.getElementById("whydesc"+i+"").innerHTML=myObj.workwithus_reasons[i].desc;
     }
     for(i=0;i<5;i++){
